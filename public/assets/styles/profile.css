@@ -1,3 +1,74 @@
-p {
-    color: #27ae60;
+.auth-form {
+    width: 30vw;
+}
+
+.auth-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.auth-form-part {
+    margin-bottom: 1rem;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #730100;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #736a06;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.toggle-form button {
+    background: none;
+    border: none;
+    color: #730100;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+}
+
+.error-message {
+    color: #ff0000;
+    text-align: center;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.logout-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #730100;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #d34a4a;
 }

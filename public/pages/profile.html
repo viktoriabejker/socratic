@@ -17,7 +17,54 @@
     </nav>
     
     <main>
-        <p>Ваш профиль</p>
+        <!-- LOGIN FORM -->
+        <div id="login-form" class="auth-form" style="display: none;">
+            <h2>Вход</h2>
+            <div class="auth-form-part">
+                <label for="login-username">Логин</label>
+                <input type="text" id="login-username" required>
+            </div>
+            <div class="auth-form-part">
+                <label for="login-password">Пароль</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button id="login-btn">Войти</button>
+            <div class="toggle-form">
+                <p>Нет аккаунта? <button id="show-register-btn">Зарегистрироваться</button></p>
+            </div>
+            <div id="login-error" class="error-message"></div>
+        </div>
+
+        <!-- REGISTRATION FORM -->
+        <div id="register-form" class="auth-form" style="display: none;">
+            <h2>Регистрация</h2>
+            <div class="auth-form-part">
+                <label for="register-username">Логин</label>
+                <input type="text" id="register-username" required>
+            </div>
+            <div class="auth-form-part">
+                <label for="register-password">Пароль</label>
+                <input type="password" id="register-password" required>
+            </div>
+            <div class="auth-form-part">
+                <label for="register-confirm-password">Подтвердите пароль</label>
+                <input type="password" id="register-confirm-password" required>
+            </div>
+            <button id="register-btn">Зарегистрироваться</button>
+            <div class="toggle-form">
+                <p>Уже есть аккаунт? <button id="show-login-btn">Войти</button></p>
+            </div>
+            <div id="register-error" class="error-message"></div>
+        </div>
+
+        <!-- PROFILE -->
+        <div id="profile-info" class="profile-info" style="display: none;">
+            <h2>Ваш профиль</h2>
+            <p>Вы вошли как: <strong id="username-display"></strong></p>
+            <button class="logout-btn" id="logout-btn">Выйти</button>
+        </div>
+
+        <script src="../scripts/auth.js"></script>
     </main>
 </body>
 
