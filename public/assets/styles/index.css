@@ -1,3 +1,29 @@
-p {
-    color: #72a5d8;
+#posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.post {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    width: 60vw;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #803737;
+}
+
+.post-time {
+    font-size: 0.75rem;
+    color: #5e5a5a;
+    margin-bottom: 0.75rem;
+}
+
+.post-text {
+    line-height: 1.5;
 }

@@ -34,8 +34,20 @@ async function createUser(login, password) {
     }
 }
 
+// получение всех постов из базы данных
+async function getPosts() {
+    try {
+        const result = await pool.query('SELECT * FROM posts ORDER BY time DESC');
+        return result.rows;
+    } catch (error) {
+        console.error('Error getting posts:', error);
+        throw error;
+    }
+}
+
 module.exports = {
     pool,
     getUserByLogin,
-    createUser
+    createUser,
+    getPosts
 };
